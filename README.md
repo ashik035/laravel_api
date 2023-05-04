@@ -5,29 +5,35 @@ This is a simple Todo application built using Laravel v8 and REST API. Follow th
 Instructions
 1. Clone the repository using the command git clone https://github.com/ashik035/laravel_api.git.
 
+
 2. Run the following commands to install the project dependencies:
 
  
 composer update
 npm i && npm run dev
 
+
 3. Rename the .env.example file to .env.
 
 4. Run the following command to start the Laravel development server:
 
- 
+
 php artisan serve
 5. Update the database name in the .env file and run the migrations using the following command:
- 
- 
+
+
 php artisan migrate
 
 6. Add the following variables to your .env file:
  
-PASSPORT_PERSONAL_ACCESS_CLIENT_ID=1
+PASSPORT_PERSONAL_ACCESS_CLIENT_ID=1 
+
 PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET=
+
 PASSPORT_PASSWORD_CLIENT_ID=2
+
 PASSPORT_PASSWORD_CLIENT_SECRET=
+
 
 7. Run the following command to install the Passport authentication package:
  
