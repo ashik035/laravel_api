@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "fbe939b0-9f9c-4ece-8f50-a0ec8262e585",
+		"name": "orangeToolz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27184590",
+		"_collection_link": "https://orange-satellite-453540.postman.co/workspace/Team-Workspace~e8e818f7-b3c1-46d5-85d5-835295d4787d/collection/27184590-fbe939b0-9f9c-4ece-8f50-a0ec8262e585?action=share&creator=27184590&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "ashiksas",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ashdas@dde.cc",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Abc12345a",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "Abc12345a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "ashik@gmail.co",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Abc12345a",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "Abc12345a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Todo",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYWZkZmI1Y2ExMDJiMTE5MWM3ZmY1NDMzNDNhNmYxOTEwMjAyZDkwMGJmOTIzNzk3ZWMzODdkZGJiNmQ3YzM1ZTQyZmM0MmMwYTk4ODVhMWEiLCJpYXQiOjE2ODI5Mzc5MDUuMjYwMzU3LCJuYmYiOjE2ODI5Mzc5MDUuMjYwMzYyLCJleHAiOjE3MTQ1NjAzMDUuMjUzMTU4LCJzdWIiOiI2Iiwic2NvcGVzIjpbXX0.VEQstxLTqvMmZDOPEeEc8-qfmS7xGnri0PGTd3BdaSJ5oWL30kqt-kDXheX3idMh98PLdO3DcqLM1nbpPY8KolAXbl2EH9ztTIxI4QmJYwVmjC2Lce0deMbccdf1AiYPhpyxuelEcCKJP5JTfQ6zyZnsZ_VLw1WcaZ3zBDyDV4P6O5296rqSWkG2Ij76ZsaJbhV0VyFvFwFLBrPE3BNu-rtfpd7mcawPwf63P7yAa4E3-PUvjaPl445O4DzE6pW_Ghz5RPorBZ-uD39mmbAyg5sj1cnQmOTMlGeyEQBZX-QwVK5166ld3J2mhj1CYEl--BrHRnwCcnvu-elDAAAGmpDKGd8AiNbaIhqQeG0uv1M6SVZg_0CLa44kQ1591OrS9fglhsn8dk0LUnNswg9AhjEgC_NuzmZFSmHpMUk3z9B9MNNOyHKf-ny7IN_g28mxNfvsB3m65x97Qp0fSX_yYKDJsADl4XMf2Eh-VCYx7PikZTzfBQ20nasot0ZBAMxa3keSA3Ic9QNqgJuL7MBSg55y3-BZsD3N1cYnb_ciWKUBRVMLUii0retVNJXg3-6t2m6zaYTlEh8050ucsqgbzB7eOXYpnkUFP44dsAoAjwIdDwBaw-6uYrcivnhmMz2IhBs2LOCc1q_SyZhIha5x4KxD3ROTgwQBdWS-oJrr83A",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "todo1",
+									"type": "text"
+								},
+								{
+									"key": "tasks",
+									"value": "task1, task2, task3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/todo?name=todo1&tasks=task1, task2, task3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"todo"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "todo1"
+								},
+								{
+									"key": "tasks",
+									"value": "task1, task2, task3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmE5YzQzNTkxYzJlNDcxMjcyNjdiYTdhZTJiM2Q4NmYwYzMwOGJkMDkwNmNiY2VhYjEwM2JkYWUzYjlmZDk5ZTc1ZTU5MDVlNzIyYzBhZmUiLCJpYXQiOjE2ODMxMDQ3MzguMDc5OTk2LCJuYmYiOjE2ODMxMDQ3MzguMDc5OTk5LCJleHAiOjE3MTQ3MjcxMzguMDc0NjAxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.f9Z_DZ-BxmPG48dz_G-asdeWXium3d1_COpTJdV5MSdXwPXSmghRCtR-GQtjgxjUfx9nVUytVbYIOhHt7PMLTxPilPvGV3iyAtcreW44W0yi04CNte62xvaYDSoyFClmEVbzLBONJdMXnyiDLM5C1kbDC7w1CsWmgxF4pnAvaPliV2f8XXrIWwEkwQUUmkPez-e2gbPBUCfDG8NKiJh8b92PrRnv5c2WVaqvXOI01ByKz6bY7hGlP5SuZKJ1KKiZ9EE3xOlJMpc-u82XEzBZMXFzN7OIMUQ-8DvVngpxGSgFUbDCqwJeuaV_6gnbxiTxNbCcihn32n9W2GyXyTJfqgaRxLvBb6gbzERTpmYaG4mnd_iEWeSatTONeLQ2rBMejy-eiKekZlhH5aHlhYGDW8MOG9eDNcpv3bVGjvuXDsssJ79tv3F8XxKTl1KlH8acqCvoI0CU9TE5F6uhwksHeU1GexP01HYjPQO8J15W-Cgp543NePPUz2bsHnSErEWngF4d5CDcf57VJsgPUai5sxD2duj1ZpEAnUpP8HqAZuJF5DfTFt5ULgcX2uXDRpeITCgf2mOeejNj48Upd2UBuD6tAtWqSgJoDPg6W4Hv6Nyr5EGlD_lKzsJOpnEu5pRt_AYggKuB8SZouOmTUe8wTHVahVR3hMsxDoxR54lFMTc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "todo 3",
+									"type": "text"
+								},
+								{
+									"key": "tasks",
+									"value": "task1, task4, task 5",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/todo/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"todo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/todo/{todo}",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"todo",
+								"{todo}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/todo/{todo}",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"todo",
+								"{todo}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "destroy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmE5YzQzNTkxYzJlNDcxMjcyNjdiYTdhZTJiM2Q4NmYwYzMwOGJkMDkwNmNiY2VhYjEwM2JkYWUzYjlmZDk5ZTc1ZTU5MDVlNzIyYzBhZmUiLCJpYXQiOjE2ODMxMDQ3MzguMDc5OTk2LCJuYmYiOjE2ODMxMDQ3MzguMDc5OTk5LCJleHAiOjE3MTQ3MjcxMzguMDc0NjAxLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.f9Z_DZ-BxmPG48dz_G-asdeWXium3d1_COpTJdV5MSdXwPXSmghRCtR-GQtjgxjUfx9nVUytVbYIOhHt7PMLTxPilPvGV3iyAtcreW44W0yi04CNte62xvaYDSoyFClmEVbzLBONJdMXnyiDLM5C1kbDC7w1CsWmgxF4pnAvaPliV2f8XXrIWwEkwQUUmkPez-e2gbPBUCfDG8NKiJh8b92PrRnv5c2WVaqvXOI01ByKz6bY7hGlP5SuZKJ1KKiZ9EE3xOlJMpc-u82XEzBZMXFzN7OIMUQ-8DvVngpxGSgFUbDCqwJeuaV_6gnbxiTxNbCcihn32n9W2GyXyTJfqgaRxLvBb6gbzERTpmYaG4mnd_iEWeSatTONeLQ2rBMejy-eiKekZlhH5aHlhYGDW8MOG9eDNcpv3bVGjvuXDsssJ79tv3F8XxKTl1KlH8acqCvoI0CU9TE5F6uhwksHeU1GexP01HYjPQO8J15W-Cgp543NePPUz2bsHnSErEWngF4d5CDcf57VJsgPUai5sxD2duj1ZpEAnUpP8HqAZuJF5DfTFt5ULgcX2uXDRpeITCgf2mOeejNj48Upd2UBuD6tAtWqSgJoDPg6W4Hv6Nyr5EGlD_lKzsJOpnEu5pRt_AYggKuB8SZouOmTUe8wTHVahVR3hMsxDoxR54lFMTc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/todo/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"todo",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
