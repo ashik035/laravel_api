@@ -3,13 +3,16 @@ Simple Todo Application with Laravel REST API
 This is a simple Todo application built using Laravel v8 and REST API. Follow the instructions below to run this project on your local machine.
 
 Instructions
-1. Clone the repository using the command git clone https://github.com/ashik035/laravel_api.git.
+1. Clone the repository using the command:
+
+git clone https://github.com/ashik035/laravel_api.git.
 
 
 2. Run the following commands to install the project dependencies:
 
  
 composer update
+
 npm i && npm run dev
 
 
